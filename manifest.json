@@ -1,0 +1,18 @@
+{
+  "name": "toledo-downloader",
+  "version": "0",
+  "description": "Recursive auto-downloader for toledo(only tested with KULeuven)",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "*://*/*",
+    "downloads",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["js/downloader.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
